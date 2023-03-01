@@ -8,7 +8,7 @@ $nome = filter_input(INPUT_GET, 'nome');
 }
 
  */
-$idade = filter_input(INPUT_GET, 'idade');
+$idade = filter_input(INPUT_GET, 'idade', FILTER_VALIDATE_INT);
 /* 
 if($idade){
     echo '<br />idade: '.$idade;
